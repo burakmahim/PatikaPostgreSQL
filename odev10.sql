@@ -1,0 +1,35 @@
+-- 1. city ve country tablolarında LEFT JOIN ile şehir ve ülke isimlerini birlikte gösterme:
+-- SELECT 
+--     city.city_id, 
+--     city.city, 
+--     country.country
+-- FROM 
+--     city
+-- LEFT JOIN 
+--     country 
+-- ON 
+--     city.country_id = country.country_id;
+
+-- 2. customer ve payment tablolarında RIGHT JOIN ile payment_id, first_name ve last_name gösterme:
+-- SELECT 
+--     payment.payment_id, 
+--     customer.first_name, 
+--     customer.last_name
+-- FROM 
+--     customer
+-- RIGHT JOIN 
+--     payment 
+-- ON 
+--     customer.customer_id = payment.customer_id;
+
+-- 3. customer ve rental tablolarında FULL JOIN ile rental_id, first_name ve last_name gösterme:
+-- SELECT 
+--     rental.rental_id, 
+--     customer.first_name, 
+--     customer.last_name
+-- FROM 
+--     customer
+-- FULL JOIN 
+--     rental 
+-- ON 
+--    customer.customer_id = rental.customer_id;
